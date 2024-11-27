@@ -1,0 +1,251 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: rgba(224, 255, 255, 0.7);
+}
+
+/* Шапка */
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #B0E0E6;
+    border-bottom: 2px solid #ccc;
+}
+
+.hero {
+    position: relative; /* Дозволяє використання позиціювання для вмісту */
+    text-align: center; /* Центрування тексту */
+    color: #000000; /* Колір тексту для контрасту з логотипом */
+    background: url('img/logo.png') no-repeat center center; /* Фон як логотип */
+    background-size: contain; /* Розмір логотипа за розмірами секції */
+    height: 500px; /* Висота секції, можна змінити за необхідністю */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    background-color: rgba(224, 255, 255, 0.7); /* Чорний напівпрозорий фон */
+    padding: 10px 20px; /* Внутрішні відступи для створення "рамки" */
+    border-radius: 8px; /* Згладжені кути рамки */
+    display: inline-block; /* Щоб фон обмежувався розміром тексту */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Тінь для глибини */
+    font-size: 28px; /* Розмір шрифту */
+}
+
+
+.hero p {
+    background-color: rgba(224, 255, 255, 0.6); /* Напівпрозорий фон */
+    padding: 8px 15px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 10px; /* Відступ між текстом і заголовком */
+    font-size: 18px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.menu-item-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu-item-link:hover {
+    color: #ff6661;
+}
+
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* Секція intro */
+.intro {
+    padding: 20px;
+    background-color: #B0E0E6;
+    text-align: center;
+}
+
+.intro h2 {
+    color: #333;
+}
+
+.intro ul {
+    list-style: none;
+    padding: 0;
+}
+
+.intro li {
+    margin: 10px 0;
+}
+
+/* Популярні напрямки */
+.destinations {
+    padding: 20px;
+    background-color: rgba(224, 255, 255, 0.7);
+}
+
+/* Форма зворотного зв’язку */
+.feedback {
+    padding: 20px;
+    background-color: #B0E0E6;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.feedback form {
+    display: flex;
+    flex-direction: column; /* Розташування елементів один під одним */
+    align-items: center; 
+    gap: 5px; /* Відступи між елементами форми */
+}
+.feedback label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.feedback input,
+.feedback textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.feedback button {
+    align-self: flex-start; /* Вирівнювання кнопки ліворуч */
+    padding: 10px 20px;
+    background-color:#008B8B;
+    color: white;
+    border: none;
+    margin: 0 auto;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.feedback button:hover {
+    background-color: #48D1CC;
+}
+
+/* Футер */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #008B8B;
+    color: #fff;
+}
+
+
+/* Контейнер для напрямків */
+.destinations-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(224, 255, 255, 0.7);
+}
+
+/* Стилі для кожного блоку напрямку */
+.destination {
+    background-color: rgba(224, 255, 255, 0.7);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.destination-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.destination-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.destination-text {
+    font-size: 1em;
+    color: #555;
+}
+
+
+
+/* Контейнер секції */
+.contact {
+    padding: 20px;
+    background-color: rgba(224, 255, 255, 0.7);
+    text-align: center;
+}
+
+/* Заголовок */
+.contact-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Форма */
+.form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-button {
+    background-color: #008B8B;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form-button:hover {
+    background-color: #e55550;
+}
+
